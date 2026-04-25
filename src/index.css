@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-primary: #004326;
+  --color-brand-secondary: #8e4e00;
+  --color-brand-tertiary: #63262d;
+  --color-brand-bg: #fff8f0;
+  --color-brand-surface: #f4ede2;
+  --color-brand-outline: #c0c9bf;
+  --color-brand-gold: #D4A017;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-stone-900 font-sans antialiased;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
